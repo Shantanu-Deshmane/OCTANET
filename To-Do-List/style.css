@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    min-width: 100vh;
+    background-color: rgba(145, 228, 255, 0.836);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.to-do-container {
+    width: 100%;
+    max-width: 540px;
+    max-height: 600px;
+    background-color: #fff;
+    padding: 20px 50px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    overflow-y: scroll;
+}
+
+.to-do-container::-webkit-scrollbar {
+    width: 15px;
+}
+
+.to-do-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(#ff0762, #f96199, #f9c5d7);
+    border-radius: 35px;
+
+}
+
+@media (max-width:800px) {
+    .to-do-container {
+        max-height: 800px;
+
+    }
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+}
+
+.to-do-container h2 {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    justify-content: center;
+    padding: 30px 0px;
+    color: #f96199;
+    border-bottom: 2px solid #f96199;
+    margin-bottom: 25px;
+}
+
+.task {
+    width: 100%;
+    background-color: rgba(218, 215, 215, 0.548);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+
+}
+
+.task input {
+    padding: 18px;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+
+.task button {
+    padding: 16px 28px;
+    border: none;
+    outline: none;
+    background-color: #f96199;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.list_container {
+    margin-top: 40px;
+    overflow-x: scroll;
+}
+
+.list_container::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+}
+
+.list_container li {
+    color: rgb(128, 128, 128);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 10px 0px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.list_container li i {
+    color: #f96199;
+    cursor: pointer;
+}
